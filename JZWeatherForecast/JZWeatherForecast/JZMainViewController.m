@@ -20,6 +20,8 @@
 
     self.view.backgroundColor = [UIColor whiteColor];
     
+    
+ 
 //    [[JZNetWorkTool shareNetWorkTool] getCityWeatherWithLocation:@"beijing" FinshedBlock:^(BOOL success, NSDictionary *result, NSError *error) {
 //        
 //        NSLog(@"%@",result);

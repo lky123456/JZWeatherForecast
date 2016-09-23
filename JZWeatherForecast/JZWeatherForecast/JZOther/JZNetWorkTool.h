@@ -86,7 +86,13 @@ typedef void(^Finished)(BOOL success,NSDictionary *result,NSError *error);
                       FinshedBlock:(Finished)finished;
 
 
-
+/**
+ *  获取前后几天的天气
+ *
+ *  @param dayType
+ *  @param location 城市
+ *  @param days     几天
+ */
 - (void)getDailyWeatherWithStartDayType:(startDayType )dayType
                                location:(NSString *)location
                                    days:(NSString *)days
