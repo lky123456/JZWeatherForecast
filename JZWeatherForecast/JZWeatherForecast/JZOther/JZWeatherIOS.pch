@@ -1,0 +1,22 @@
+//
+//  JZWeatherIOS.pch
+//  JZWeatherForecast
+//
+//  Created by 梁奎元 on 16/9/23.
+//  Copyright © 2016年 济源职业技术学院. All rights reserved.
+//
+
+#ifndef JZWeatherIOS_pch
+#define JZWeatherIOS_pch
+
+
+#import "JZNetWorkTool.h"
+
+#import "JZWeatherConst.h"
+
+#import "NSDictionary+Extension.h"
+
+#import "JZComment.h"
+
+
+#endif /* JZWeatherIOS_pch */
