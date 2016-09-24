@@ -21,14 +21,14 @@
     self.view.backgroundColor = [UIColor whiteColor];
     
     
- 
+ //  接口1 获取指定城市天气
 //    [[JZNetWorkTool shareNetWorkTool] getCityWeatherWithLocation:@"beijing" FinshedBlock:^(BOOL success, NSDictionary *result, NSError *error) {
 //        
 //        NSLog(@"%@",result);
 //        
 //    }];
 
-    
+    // 接口2  　获取指定天气 指定时间及未来的天气
     [[JZNetWorkTool shareNetWorkTool] getDailyWeatherWithStartDayType:startDayTypeToday
                                                              location:@"beijing"
                                                                  days:@"5"
