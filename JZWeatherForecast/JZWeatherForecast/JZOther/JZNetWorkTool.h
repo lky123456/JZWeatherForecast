@@ -75,6 +75,9 @@ typedef void(^Finished)(BOOL success,NSDictionary *result,NSError *error);
 
 @interface JZNetWorkTool : NSObject
 
+/**
+ *  请求类实例
+ */
 +(instancetype)shareNetWorkTool;
 
 /**

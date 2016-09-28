@@ -13,7 +13,7 @@
 @interface JZNetWorkTool()
 
 /**
- *  <#Description#>
+ *   网络请求对象
  */
 @property (nonatomic, strong) NSURLSession  *session;
 
@@ -55,7 +55,8 @@
             
             finished(false,nil,error);
             
-        }else{
+        }else
+        {
         
           NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
             
@@ -88,15 +89,12 @@
             finished(false,nil,error);
         }else
         {
-        NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
+            
+            NSDictionary *dict = [NSJSONSerialization JSONObjectWithData:data options:NSJSONReadingMutableLeaves error:nil];
             finished(true,dict,nil);
         }
         
     } ] resume];
-   
-    //https://api.thinkpage.cn/v3/weather/now.json?language=zh-Hans&start=0&key=ktzdofzqcnj5fcr8&days=5&location=beijing&unit=c
-    //https://api.thinkpage.cn/v3/weather/daily.json?key=ktzdofzqcnj5fcr8&location=beijing&language=zh-Hans&unit=c&start=0&days=5
-    
 }
 
 #pragma mark - lazy
